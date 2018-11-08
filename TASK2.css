@@ -1,0 +1,117 @@
+h2 {
+text-align:center;
+color:#5f5f5f;
+}
+.tree {
+	width: 50%;
+	float: left;
+}
+
+.tree ul {
+	padding-top: 20px;
+	position: relative;
+	left: 20px;
+	list-style-type: none;
+}
+
+.tree li a {
+	border: 1px solid #ccc;
+	padding: 5px 5px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+	border-radius: 5px;
+	margin-left: 6px;
+	margin-bottom:6px;
+	transition: all 0.5s;
+	float: left;
+}
+
+ /*hover*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #c8e4f8;
+	color: #000;
+	border: 1px solid #94a0b4;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li ul {
+	display: none;
+	list-style-type: none;
+}
+
+.expand {
+	background-color: #e6f2ff;
+	color: black;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	clear:left;
+	
+}
+
+.expand::before {
+	content: '\002B ';
+	color: black;
+	font-weight: bold;
+	float: left;
+	
+}
+
+.active::before {
+	content: "\2212";
+}
+
+.new_but {
+	width: 50px;
+	padding: 6px;
+	margin: 6px;
+	border: none;
+	background-color: #178abb;
+	color: white;
+	float:right;
+}
+
+.del_res_sea_but{
+	width: 70px;
+	padding: 6px;
+	margin: 6px;
+	border: none;
+	background-color: #178abb;
+	color: white;
+	float:right;
+}
+.new_but:hover,.del_res_sea_but:hover{
+	background-color:#1aa3ff;
+}
+#myInput {
+	width:15%;
+	padding:0.5%;
+	border-top-width: 2px;
+    margin-top: 3px;
+    margin-left: 5px;
+	float:right;
+}
+#myInput:hover {
+	width:18%;
+}
+.add_form {
+	
+	display: none;
+	position: relative;
+	top: 60px;
+}
+
+.addbut {
+	padding: 6px;
+	margin: 6px; 
+	border: none; 
+	background-color: #178abb; 
+	color: white;
+}

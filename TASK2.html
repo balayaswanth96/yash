@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="TASK2.css">
+
+</head>
+<body>
+<h2>EMPLOYEE HIERARCHY</h2>
+<div style="background-color:#00e6e6;overflow:hidden;">
+	<button class="new_but" onclick="add_record()">NEW</button>
+	<button class="del_res_sea_but" onclick="delete_record()">DELETE</button>
+	<button id="sea" class="del_res_sea_but">SEARCH</button>
+	<input type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
+	
+	</div>
+	<div class="tree">
+		<ul>
+			<li><a class="expand" style="float: left;"><a>PIVOX</a></a>
+				<ul>
+					<li><a class="expand" style="float: left"><a style="float: left">SAP</a></a>
+						<ul style="float: left" class="del">
+							<li><a class="expand" style="float: left"><a>SR</a></a>
+								<ul id="sap_sr"  style="float: left">
+									<li><a><input type="radio" name="field" class="emp">PRASAD</input></a></li>
+									<li><a><input type="radio" name="field" class="emp">RAJ</input></a></li>
+									<li><a><input type="radio" name="field" class="emp">KALYANI</input></a></li>
+								</ul></li>
+							<li><a class="expand " style="float: left"><a>JR </a></a>
+								<ul id="sap_jr"  style="float: left">
+									<li><a href="#"><input type="radio" name="field" class="emp">NARENDRA</a></li>
+									<li><a href="#"><input type="radio" name="field" class="emp">YASWANTH</a></li>
+								</ul></li>
+
+						</ul></li>
+					<li style="clear: left;"><a class="expand" style="float: left"><a>JAVA</a></a>
+						<ul style="float: left" class="del">
+							<li><a class="expand" style="float: left"><a>SR</a></a>
+								<ul id="java_sr" style="float: left">
+									<li><a href="#"><input type="radio" name="field" class="emp">GURU</a></li>
+								</ul></li>
+							<li><a class="expand" style="float: left"><a>JR </a></a>
+								<ul id="java_jr" style="float: left">
+									<li><a href="#"><input type="radio" name="field" class="emp">ASHOK</a></li>
+								</ul></li>
+
+						</ul></li>
+					<li style="clear: left;"><a class="expand" style="float: left"><a>JDSN</a></a>
+						<ul style="float: left" class="del">
+							<li><a class="expand" style="float: left;"><a>SR</a></a>
+								<ul id="jdsn_sr" style="float: left">
+									<li><a href="#"><input type="radio" name="field" class="emp">MANASA</a></li>
+								</ul></li>
+							<li><a class="expand" style="float: left"><a>JR </a></a>
+								<ul id="jdsn_jr" style="float: left">
+									<li><a href="#"><input type="radio" name="field" class="emp">NULL</a></li>
+								</ul></li>
+
+						</ul></li>
+					<li style="clear: left;"><a class="expand" style="float: left"><a>MANAGEMENT</a></a>
+						<ul style="float: left" class="del">
+							<li><a href="#"><input type="radio" name="field" class="admin">PAVAN</a></li>
+							<li><a href="#"><input type="radio" name="field" class="admin">YUGANDHAR</a></li>
+
+						</ul></li>
+
+				</ul></li>
+		</ul>
+	</div>
+<div style="float:left;">	
+    
+	<div class="add_form">
+		<fieldset>
+			<legend>NEW EMPLOYEE</legend>
+
+
+			<div id="tech">
+				<a>SELECT ONE OF THE BELLOW</a><br> <input type="radio"
+					name="field" id="sap">SAP<br> <input type="radio"
+					name="field" id="java">JAVA<br> <input type="radio"
+					name="field" id="jdsn">JDSN<br>
+			</div>
+			<div id="role">
+				<a>SELECT ONE OF THE BELLOW</a><br> <input type="radio"
+					name="desig" id="sr">SR<br> <input type="radio"
+					name="desig" id="jr">JR<br>
+			</div>
+			NAME: <input type="text" id="new_name"></input><br>
+			<button class="addbut"
+				
+				onclick="add_new()">add</button>
+
+
+		</fieldset>
+	</div>
+	</div>
+	
+	
+<script src="jquery.min.js"></script>
+	<script src="TASK2.js">
+
+</script>
+
+
+</body>
+</html>

@@ -100,7 +100,7 @@ document.getElementById("new_name").value="";
 function add_record() {
 $(".add_form").toggle();
 }
-
+//to delete 
 function delete_record() {
 	var c1 = document.getElementsByClassName("emp");
 	var ad = document.getElementsByClassName("admin");
